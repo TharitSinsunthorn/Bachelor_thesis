@@ -1,0 +1,104 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%   macrosForEThesis.tex
+%%   -------------------
+%%
+%%   Title: LaTeX macro file for the English Thesis
+%%   
+%%   
+%%   Belief:
+%%   1."Fig. 1: ~~~", "Table 1: ~~~" are for the figure and table citation.
+%%   2. add the config to read the source code file (hello.c) and visualize it. 
+%%
+%%   Change Log:
+%%   2020.11.26 Initial creation by Kentaro UNO
+%%
+%%   Contact:
+%%   Please contact the author Kentaro UNO (unoken.astro@gmail.com) if
+%%   you have a problem
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% useful command
+\newcommand{\n}{\nonumber \\}
+\newcommand{\p}{\partial}
+\newcommand{\bs}[1]{\boldsymbol{#1}}
+\newcommand{\II}{I\negthinspace I}
+\newcommand{\III}{I\negthinspace I\negthinspace I}
+\newcommand{\mbm}[1]{\mbox{\protect \boldmath $#1$}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  config for citation of figures, tables, and equations
+%%%  to use English for all. 
+%%%  2020.01.29 modified by Kentaro UNO
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% figure and table
+\captionsetup{compatibility=false}
+%
+\renewcommand{\figurename}{Fig.~\hspace{-.2em}}   
+\renewcommand{\tablename}{Table~\hspace{-.2em}}
+
+\captionsetup[figure]{format=plain,labelformat=simple,labelsep=colon,font=small}
+\captionsetup[table]{format=plain,labelformat=simple,labelsep=colon,font=small}
+
+\newcommand{\bhline}[1]{\noalign{\hrule height #1}} % bhlineコマンドの設定
+
+%%% citation command for figures, tables, and equations
+\newcommand{\fig}[1]{Fig.~\ref{#1}}
+\newcommand{\subfig}[2]{Fig.~\ref{#1}\subref{#2}}
+\newcommand{\fign}[1]{\ref{#1}}
+\newcommand{\tb}[1]{Table~\ref{#1}}
+\newcommand{\tabn}[1]{\ref{#1}}
+\newcommand{\eq}[1]{Eq.~(\ref{#1})}
+\newcommand{\eqn}[1]{(\ref{#1})}
+
+%%% citation command for chapters, sections, and appendixes
+\newcommand{\chap}[1]{Chap.~\ref{#1}}
+\newcommand{\sect}[1]{Sect.~\ref{#1}}
+\newcommand{\subsect}[1]{Sect.~\ref{#1}}
+\newcommand{\app}[1]{Appnd. ~\ref{#1}}
+
+%%% visualize a figure and table in a row
+\makeatletter
+\newcommand{\figcaption}[1]{\def\@captype{figure}\caption{#1}}
+\newcommand{\tblcaption}[1]{\def\@captype{table}\caption{#1}}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  ソースコードの引用スタイルの設定
+%%%  2020.01.24 added by Kentaro UNO
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{listings} %日本語のコメントアウトをする場合はjlistingが必要
+%ここからソースコードの表示に関する設定
+\definecolor{gray}{rgb}{0.9,0.9,0.9}
+\lstset{
+  backgroundcolor=\color{gray}, % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  basicstyle={\small\ttfamily}, % the style of the fonts that are used for the code
+  identifierstyle={\small}, % main()の''main''等のスタイル
+  commentstyle={\small\itshape}, %//comment 等のスタイル
+  keywordstyle={\small}, % int mainの''int''等のスタイル
+  ndkeywordstyle={\small},
+  stringstyle={\small\ttfamily},  % string literal style -> % printf(''Hello'')の''''で囲まれた部分のスタイル
+  %frame={tb},
+  breaklines=true, % sets automatic line breaking
+  columns=[l]{fullflexible},
+  numbers=left, % where to put the line-numbers; possible values are (none, left, right)
+  numberstyle={\scriptsize}, % the style that is used for the line-numbers
+  stepnumber=1, % the step between two line-numbers. If it's 1, each line will be numbered
+  numbersep=1zw, % 行数字とコードの間のマージン
+  xrightmargin=0zw, % 表示個所の右側マージン
+  xleftmargin=2zw,  % 表示個所の左側マージン
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  lineskip=-0.5ex % codeの行間の設定
+}
+
+\def\epsgaiji#1{\leavevmode\kern-0.025zw\raise-.37zh\hbox{%
+  \epsfile{file=#1,width=1.05zw}}\kern-0.025zw}
+%\newcommand{\dfrac}[2]{\frac{\displaystyle{#1}}{\displaystyle{#2}}}
+\newcommand{\MARU}[1]{{\ooalign{\hfil#1\/\hfil\crcr\raise.167ex\hbox{\mathhexbox20D}}}}
+
+%%%

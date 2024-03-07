@@ -1,0 +1,185 @@
+\begin{thebibliography}{10}
+
+\bibitem{apollo}
+``{Apollo Lunar Missions}''.
+
+\bibitem{nasa_construct}
+{NASA},
+\newblock ``{NASA Looks to Advance 3D Printing Construction Systems for the Moon and Mars}'', October 2020.
+
+\bibitem{modularity}
+Mark~A. Post, Xiu-Tian Yan, and Pierre Letier,
+\newblock ``Modularity for the future in space robotics: A review'',
+\newblock {\em Acta Astronautica}, Vol. 189, pp. 530--547, 2021.
+
+\bibitem{electrovoxel}
+Martin Nisser, Leon Cheng, Yashaswini Makaram, Ryo Suzuki, and Stefanie Mueller,
+\newblock ``ElectroVoxel: Electromagnetically Actuated Pivoting for Scalable Modular Self-Reconfigurable Robots'',
+\newblock In {\em ICRA 2022}, pp. 4254--4260, 2022.
+
+\bibitem{worms}
+MIT~Space Resources,
+\newblock ``WORMS - Water-Only Resource Mining System'', 2022.
+
+\bibitem{moonshotGoal3B}
+``JST Moonshot Project Goal 3B: Realization of AI robots that autonomously learn, adapt to their environment, evolve in intelligence and act alongside human beings, by 2050''.
+
+\bibitem{spacebok}
+Philip Arm, Radek Zenkl, Patrick Barton, Lars Beglinger, Alex Dietsche, Luca Ferrazzini, Elias Hampp, Jan Hinder, Camille Huber, David Schaufelberger, Felix Schmitt, Benjamin Sun, Boris Stolz, Hendrik Kolvenbach, and Marco Hutter,
+\newblock ``SpaceBok: A Dynamic Legged Robot for Space Exploration'',
+\newblock In {\em 2019 International Conference on Robotics and Automation (ICRA)}, pp. 6288--6294, 2019.
+
+\bibitem{omniwheel}
+D.~Daniel, B.~Krogh, and M.~Friedman,
+\newblock ``Kinematics and open-loop control of an ilonator-based mobile platform'',
+\newblock In {\em Proceedings. 1985 IEEE International Conference on Robotics and Automation}, Vol.~2, pp. 346--351, 1985.
+
+\bibitem{mckerrow}
+McKerrow Philip,
+\newblock {\em Introduction to Robotics},
+\newblock Addison-Wesley Publishing Co., 1991.
+
+\bibitem{bares}
+Bares John, Hebert Martial, Kanade Takeo, Krotkov Eric, Simmons Reid, and Whittaker William,
+\newblock ``Configuration of an autonomous robot for Mars exploration'',
+\newblock In {\em World Conference on Robotics Research: The Next Five Years and Beyond}, Vol.~1, pp. 37--52, Gaithersburg, 1989.
+
+\bibitem{Eigenbot}
+Julian Whitman, Raunaq~M. Bhirangi, Matthew~J. Travers, and Howie Choset,
+\newblock ``Modular Robot Design Synthesis with Deep Reinforcement Learning'',
+\newblock In {\em AAAI Conference on Artificial Intelligence}, 2020.
+
+\bibitem{MITassembler}
+A.~Abdel-Rahman, C.~Cameron, B.~Jenett, and et~al.,
+\newblock ``Self-replicating hierarchical modular robotic swarms'',
+\newblock {\em Commun Eng}, Vol.~1, p.~35, 2022.
+
+\bibitem{snapbot1}
+Joohyung Kim, Alexander Alspach, and Katsu Yamane,
+\newblock ``Snapbot: A reconfigurable legged robot'',
+\newblock In {\em 2017 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, pp. 5861--5867, 2017.
+
+\bibitem{moonshotproject}
+{Cabinet Office, Government of Japan},
+\newblock ``Moonshot Project: Realization of AI Robots for Lunar Exploration'', Accessed: 2023.
+
+\bibitem{snapbot2}
+Kevin~G. Gim and Joohyung Kim,
+\newblock ``Snapbot V2: a Reconfigurable Legged Robot with a Camera for Self Configuration Recognition'',
+\newblock In {\em 2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, pp. 4026--4031, 2020.
+
+\bibitem{modularrobot}
+Julian Whitman, Shuang Su, Stelian Coros, Alex Ansari, and Howie Choset,
+\newblock ``Generating gaits for simultaneous locomotion and manipulation'',
+\newblock In {\em 2017 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, pp. 2723--2729, 2017.
+
+\bibitem{syropod}
+Benjamin Tam, Fletcher Talbot, Ryan Steindl, Alberto Elfes, and Navinda Kottege,
+\newblock ``OpenSHC: A Versatile Multilegged Robot Controller'',
+\newblock {\em IEEE Access}, Vol.~8, pp. 188908--188926, 2020.
+
+\bibitem{PLA}
+{FlashForge},
+\newblock ``{FlashForge 3D Printer - Adventurer 3}'', 2023.
+
+\bibitem{robotis}
+{ROBOTIS},
+\newblock ``{ROBOTIS: Dynamixel Servos}'',
+\newblock \url{https://www.robotis.us/}, 2023.
+
+\bibitem{ros}
+Morgan Quigley, Brian Gerkey, Ken Conley, Josh Faust, Tully Foote, Jeremy Leibs, Eric Berger, Rob Wheeler, and Andrew Ng,
+\newblock ``ROS: an open-source Robot Operating System'',
+\newblock In {\em Proc. of the IEEE Intl. Conf. on Robotics and Automation (ICRA) Workshop on Open Source Robotics}, Kobe, Japan, May 2009.
+
+\bibitem{ros2}
+Steven Macenski, Tully Foote, Brian Gerkey, Chris Lalancette, and William Woodall,
+\newblock ``Robot Operating System 2: Design, architecture, and uses in the wild'',
+\newblock {\em Science Robotics}, Vol.~7, No.~66, p. eabm6074, 2022.
+
+\bibitem{DDS}
+William Woodall,
+\newblock ``{ROS on DDS}'',
+\newblock Online documentation.
+
+\bibitem{ros2control}
+ROS 2 Control~Working Group,
+\newblock ``{ROS 2 Control}'', 2023,
+\newblock Online documentation.
+
+\bibitem{ros_control}
+{ROS Controls},
+\newblock ``{ros\_control}''.
+
+\bibitem{ros_combined_robot_hw}
+ROS~Wiki Contributors,
+\newblock ``combined\_robot\_hw''.
+
+\bibitem{ros2lifecycle}
+ROS~2 Design,
+\newblock ``ROS 2 Node Lifecycle'', 2015,
+\newblock Date Written: June 2015.
+
+\bibitem{dynamixel-sdk}
+{ROBOTIS},
+\newblock {\em {ROBOTIS Dynamixel SDK}},
+\newblock 2010.
+
+\bibitem{dynamixel_workbench}
+``{Dynamixel Workbench}'',
+\newblock \url{https://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_workbench/},
+\newblock Accessed: December 2023.
+
+\bibitem{dynamixel_sdk_ping_protocol}
+{ROBOTIS},
+\newblock ``Dynamixel SDK - Python Ping Protocol 2.0'',
+\newblock 2023.
+
+\bibitem{dynamixel_wizard2}
+{ROBOTIS},
+\newblock ``Dynamixel Wizard2''.
+
+\bibitem{ros2controllers}
+{ROS 2 Control Authors},
+\newblock ``{ROS 2 Controllers Documentation}'',
+\newblock \url{https://control.ros.org/master/doc/ros2_controllers/doc/controllers_index.html}.
+
+\bibitem{gazebo}
+``{Gazebo}: An open-source 3D robotics simulator'',
+\newblock Available at \url{http://gazebosim.org}, 2002.
+
+\bibitem{uno2021hubrobo}
+Kentaro Uno, Naomasa Takada, Taku Okawara, Keigo Haji, Arthur Candalot, Warley F.~R. Ribeiro, Kenji Nagaoka, and Kazuya Yoshida,
+\newblock ``HubRobo: A Lightweight Multi-Limbed Climbing Robot for Exploration in Challenging Terrain'',
+\newblock In {\em Proceedings of the IEEE-RAS International Conference on Humanoid Robots (Humanoids)}, pp. 209--215, 2021.
+
+\bibitem{hyperdog}
+Nipun Dhananjaya~Weerakkodi Mudalige, Iana Zhura, Ildar Babataev, Elena Nazarova, Aleksey Fedoseev, and Dzmitry Tsetserukou,
+\newblock ``HyperDog: An Open-Source Quadruped Robot Platform Based on ROS2 and micro-ROS'',
+\newblock In {\em 2022 IEEE International Conference on Systems, Man, and Cybernetics (SMC)}, pp. 436--441, 2022.
+
+\bibitem{anymalRL}
+Myeongseop Kim, Jung-Su Kim, and Jae-Han Park,
+\newblock ``Automated Hyperparameter Tuning in Reinforcement Learning for Quadrupedal Robot Locomotion'',
+\newblock {\em Electronics}, Vol.~13, p. 116, 12 2023.
+
+\bibitem{anymalDRL}
+Vassilios Tsounis, Mitja Alge, Joonho Lee, Farbod Farshidian, and Marco Hutter,
+\newblock ``DeepGait: Planning and Control of Quadrupedal Gaits Using Deep Reinforcement Learning'',
+\newblock {\em IEEE Robotics and Automation Letters}, Vol.~5, No.~2, pp. 3699--3706, 2020.
+
+\bibitem{legged_gym_git}
+{Legged Robotics Group},
+\newblock ``{Legged Gym: OpenAI Gym Environment for Legged Robots}'',
+\newblock GitHub repository.
+
+\bibitem{modularDRL}
+Julian Whitman, Raunaq~M. Bhirangi, Matthew~J. Travers, and Howie Choset,
+\newblock ``Modular Robot Design Synthesis with Deep Reinforcement Learning'',
+\newblock In {\em Proceedings of 34th AAAI Conference on Artificial Intelligence (AAAI '20)}, pp. 10418 -- 10425, February 2020.
+
+\bibitem{modularlegDRL}
+Julian Whitman, Matthew~J. Travers, and Howie Choset,
+\newblock ``Modular mobile robot design selection with deep reinforcement learning''.
+
+\end{thebibliography}

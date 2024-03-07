@@ -1,0 +1,275 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%%  Bachelor thesis
+%%%
+%%%  English Title: 
+%%%      LaTeX Template for Graduate Research Thesis
+%%% 
+%%%                                          written by Kentaro UNO 
+%%%
+%%%  2021.02.12 Updated by Kentaro UNO to design this as an English template
+%%%  2022.12.26 Updated by Kentaro UNO to build this template in overleaf
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,12pt]{./include/ethesis_gen} % use the style file created by Dr. Genya Ishigami
+
+%%% AMS's Latex math and symbol library
+\usepackage{amsmath}
+\usepackage{amssymb}
+% \usepackage{algorithm}
+% \usepackage{algpseudocode}
+
+%%% subfigure
+%\usepackage{subfigure}
+%\usepackage{./include/subfigure} %subfigure is not recommended to use. You can use minipage.
+
+%%% caption related
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[subrefformat=parens]{subcaption} %\subref command with brakets.
+\captionsetup{compatibility=false}
+
+%%% etc
+\usepackage{color}
+\usepackage{setspace}
+%\usepackage{indentfirst}%foce indent
+\usepackage{otf}
+%\if0
+\usepackage{cite} % indexing reference
+\usepackage{multirow} 
+\usepackage{comment} % activate comment command in .tex file.
+\usepackage{tabularx}
+\usepackage{epsf}
+
+%% Uncomment if you need
+\usepackage{siunitx} % use SI unit
+% \usepackage{bm} % use bold font for vector
+% \usepackage{arydshln} % use dashline in table or matrix
+\usepackage{physics} % useful for writing formulas
+
+\usepackage{textcomp}
+\usepackage{ascmac}
+\renewcommand\thefootnote{\arabic{footnote}}
+
+%%% Table related
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+
+%%% Algorithm related %%%
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{xcolor}
+
+%%% package for Hyper link, added by Kentaro UNO 2020.3.21
+\usepackage[dvipdfmx]{hyperref,graphicx} %{graphicx}:png can be inserted
+% Japanese Garbling Prevention Package
+\usepackage{pxjahyper}
+\hypersetup{% hyperref option list
+% setpagesize=true,
+pdfborder={2 2 1},
+colorlinks=true,
+linkcolor=black,
+citecolor=black,
+urlcolor=black,
+%%% Uncommenting below, the link boader becomes a dotted square
+% pdfborderstyle=/S/D/D[3 2]/W 1,
+%%% Uncommenting below, the link boader becomes underlined
+% pdfborderstyle={/S/U/W 1},
+%%% You can goolge "\hypersetup option" for more editable options,
+% linkcolor=blue,
+% citecolor=red,
+hidelinks, % do not show frame border of links
+}
+
+%%%%%%%%%%%%%%%%				
+%\fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  TeX macro command settings
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{./include/macrosForEThesis.tex}  % made a macros.tex to wrap the settings by Kentaro UNO 2021.2.12			
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% text vertical size %%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\topmargin -25.4mm		%%%%% 上部余白なしにしておきヘッダ領域を設ける
+\headheight 20.5mm		%%%%% \headheight + \headsep = 25mm, 上部余白20mmに
+\headsep 7mm			%%%%% しなければいけないらしいが7.5mm大きめにします．
+\textheight 242mm		%%%%% 297 - (下部余白27.5mm) - (上部部余白27.5mm) 
+\footskip 13.75mm		%%%%% 下部中央(27.5/2=13.75mm)にページ番号
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% text lateral size %%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textwidth 155mm		%%% 奇数ページ右余白25mm，偶数ページ右余白30mm
+\oddsidemargin  4.6mm		%%% 25.4mm + x	奇数ページ左余白30mm
+\evensidemargin -0.4mm  	%%% 25.4mm + x	偶数ページ左余白25mm
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% 文字横間隔，行間隔 %%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\baselinestretch}{1.2}	%% すべての行間．デフォルトは１
+\baselineskip 4.0ex			%% 連続する文章の行間
+\kanjiskip=0.15pt plus 0pt minus 3pt	%% 文字間隔
+\xkanjiskip=0.15pt plus 0pt minus 3pt	%% 文字間隔
+\parindent 12pt				%% 段落の字下げ（12pt＝1字分）
+%\parskip 1pt 				%% 段落の間隔
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% 図・表・式のキャプション関係 %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%表題形式の変更(P58)
+\makeatletter
+\renewcommand{\section}{\@startsection{section}{1}{0mm}{1mm}{1mm}{\raggedright\bfseries\Large}}
+\renewcommand{\subsection}{\@startsection{subsection}{1}{0mm}{1mm}{1mm}{\raggedright\bfseries\normalsize}}
+\makeatother
+
+
+%%%箇条書きレイアウトパラメータ(P238)\listのみ
+\leftmargini    = 10mm
+\parskip        = 0mm
+
+%図表環境問題点の改善策(P263)
+\setcounter{topnumber}{100}
+\setcounter{bottomnumber}{100}
+\setcounter{totalnumber}{100}
+\renewcommand{\topfraction}{1.0}
+\renewcommand{\bottomfraction}{1.0}
+\renewcommand{\textfraction}{0.0}
+\renewcommand{\floatpagefraction}{0.0}
+
+%図表環境レイアウト(P265)
+\intextsep  =  2mm
+
+
+
+%脚注*表示
+\renewcommand\thefootnote{*\arabic{footnote}}
+%\newcommand{\Gcenter}[2]{
+%	\dimen0=\ht\strutbox
+%	\advance\dimen0\dp\strutbox
+%	\multiply\dimen0 by#1
+%	\divide\dimen0 by2
+%	\advance\dimen0 by-.5\normalbaselineskip
+%	\raisebox{-\dimen0}[0pt][0pt]{#2}
+%	}
+
+\abovecaptionskip  1mm     %キャプションの上余白
+\belowcaptionskip  1mm     %キャプションの下余白
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  文書部分の開始 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+%%%   表題   
+%%%%%%%%%%%%%%%%%%%%
+\title{ \vspace{-30mm}
+{\Large \bf Graduation Thesis} \\
+{\Large \bf School of Engineering, Tohoku University} \\
+\vspace{20mm}
+{\Huge \bf Self-Recognition-based of Modular Legged Robot} \\
+\vspace{60mm}
+}
+
+\author{
+{\Large \bf Department of Mechanical and Aerospace Engineering}\\
+{\Large \bf Space Robotics Laboratory}\vspace{25mm}\\
+{\LARGE \bf C0TB1716　Tharit Sinsunthorn}\\
+{\Large \bf (March, 2024)} \vspace{10mm}}
+\date{}
+
+%%%%%%%%%%%%%%%%%%%%
+%%%   本文開始   
+%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+~~\newpage
+
+%%%%%%%%%%%%%%%%%%%%
+%%%   Abstract 
+%%%%%%%%%%%%%%%%%%%%
+\pagenumbering{roman}
+%%%% Abstrast's pages are set MYHEADINGS mode
+\pagestyle{myheadings}\def\Vec#1{\mbox{\boldmath $#1$}}
+\input{abst.tex}
+\thispagestyle{myheadings}
+
+%%%%%%%%%%%%%%%%%%%%
+%%%   目次 
+%%%%%%%%%%%%%%%%%%%%
+%%% table's pages are set headings mode
+
+\pagestyle{headings}
+\setcounter{page}{1}%目次はローマ数字でi頁からナンバリング
+\pagenumbering{roman}
+\tableofcontents
+\listoftables
+\listoffigures
+
+%%%%%%%%%%%%%%%%%%%%
+%%%   各章 
+%%%%%%%%%%%%%%%%%%%%
+\pagestyle{headings}
+\chapter{Introduction}
+\setcounter{page}{1} %本文はアラビア数字で再度1頁からナンバリング
+\pagenumbering{arabic}
+\label{cha:intro}
+\input{chap1.tex}
+
+\chapter{Modular Legged Robot:``Moonbot"}
+%\label{cha:AAAA}
+\input{chap2.tex}
+
+\chapter{Software and Self-Recognition Algorithms}
+%\label{cha:BBBB}
+\input{chap3.tex}
+
+\chapter{Motion Control}
+%\label{cha:CCCC}
+\input{chap4.tex}
+
+\chapter{Conclusions}
+%\label{cha:DDDD}
+\input{chap5.tex}
+
+%%%%%%%%%%%%%%%%%%%%
+%%%   参考文献
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  2020.01.08 modified by Kentaro UNO
+%%%  pBibtexを使ったものに書き換え
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% 以下の二行がないとhyper linkがずれる．
+\cleardoublepage %jbookクラスなどにおいて必ず奇数ページからはじまるように改ページする． 
+\phantomsection %空の仮想セクションをおいて「Linkずれ」を回避．
+\addcontentsline{toc}{chapter}{Bibliography}
+%% \input{bib.tex}
+\bibliographystyle{./include/junsrtForThesis} %use customized Bibtex style file. 2020.01.08 modified by Kentaro UNO
+\bibliography{./bibtex/reference}
+
+%%%%%%%%%%%%%%%%%%%%
+%%%   謝辞   
+%%%%%%%%%%%%%%%%%%%%
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Acknowledgements}
+\input{thanks.tex} % \begin{my_ack} を使用する．
+
+%%%%%%%%%%%%%%%%%%%%
+%%%   Appendix
+%%%%%%%%%%%%%%%%%%%%
+% \cleardoublepage
+% \phantomsection
+% \addcontentsline{toc}{chapter}{Appendix}
+% \appendix
+% \chapter{Appendix}
+% \label{cha:appendix}
+% \input{appendix.tex}
+
+\end{document}
+

@@ -1,0 +1,436 @@
+%%%
+%%% Useful Tips: 
+%%%
+%%% - author数が多い時にはand othersとすれば省略表示(et al.と表示)される．
+%%% e.g.
+%%% author={Walker, John and Britton, Nathan and Yoshida, Kazuya and Shimizu, Toshiro and Burtz, Louis-Jerome and Pala, Alperen}, 
+%%% -> author={Walker, John and others},
+%%%
+%%% - 論文情報内でのコメントは．memo="~~~~~~~"のように書けば表示されない．
+%%%
+%%% - 日本語論文には isjapanese={true}を付加することでIEEEtran_withJP.bstの日本語用設定が適用される．
+%%%
+%%% - 単語中特定のアルファベットをbstファイル内設定（change case）に関係なく大文字表示させたい場合は{}で囲む．
+%%% e.g.
+%%% title={Update on the {T}oF camrea ~~~~},
+%%% -> title={Update on the {T}o{F} camrea ~~~~},
+%%%
+%%% - 論文情報内で（bstファイルの設定を無視して）強制的に普通体，斜体にする場合ははじめに\itや\rmを置く．
+%%% e.g.
+%%% booktitle={\it Robotics and Automation (ICRA), 2012 IEEE International Conference on},
+%%% -> booktitle={\it Robotics and Automation (ICRA), 2012 IEEE International Conference on},
+
+@misc{IEEEtranSwithJPGitHub,
+  note={{\tt \url{https://github.com/YoshiRi/JPandENbst.git}} (accessed 2020.03.22)},
+}
+
+%%% Memo 
+%%% example of proceedings paper and journal article database setting
+
+@inproceedings{uno2021hubrobo,
+  title={HubRobo: A Lightweight Multi-Limbed Climbing Robot for Exploration in Challenging Terrain},
+  author={Kentaro Uno and Naomasa Takada and Taku Okawara and Keigo Haji and Arthur Candalot and Warley F. R. Ribeiro and Kenji Nagaoka and Kazuya Yoshida},
+  booktitle={Proceedings of the IEEE-RAS International Conference on Humanoid Robots (Humanoids)},
+  pages={209--215},
+  year={2021}
+}
+
+@inproceedings{uno2021climblab,
+  title={ClimbLab: MATLAB Simulation Platform for Legged Climbing Robotics},
+  author={Kentaro Uno and Warley F. R. Ribeiro and Yusuke Koizumi and Keigo Haji and Koki Kurihara and William Jones and Kazuya Yoshida},
+  booktitle={Robotics for Sustainable Future: Proceedings of the 24th International Conference Series on Climbing and Walking Robots and the Support Technologies for Mobile Machines (CLAWAR) 2021},
+  pages={229--241},
+  year={2021}
+}
+
+@inproceedings{uno2021simulation,
+  title={Simulation-Based Climbing Capability Analysis for Quadrupedal Robots},
+  author={Kentaro Uno and Giorgio Valsecchi and Marco Hutter and Kazuya Yoshida},
+  booktitle={Robotics for Sustainable Future: Proceedings of the 24th International Conference Series on Climbing and Walking Robots and the Support Technologies for Mobile Machines (CLAWAR) 2021},
+  pages={179--191},
+  year={2021}
+}
+
+%%%%% MOONSHOT RELATED %%%%%
+@online{moonshotproject,
+  author = {{Cabinet Office, Government of Japan}},
+  title = {Moonshot Project: Realization of AI Robots for Lunar Exploration},
+  year = {Accessed: 2023},
+  url = {https://www8.cao.go.jp/cstp/english/moonshot/project_en.html}
+}
+
+@online{moonshotGoal3B,
+  title = {JST Moonshot Project Goal 3B: Realization of AI robots that autonomously learn, adapt to their environment, evolve in intelligence and act alongside human beings, by 2050},
+  organization = {Japan Science and Technology Agency (JST)},
+  url = {https://www.jst.go.jp/moonshot/en/program/goal3/3B_yoshida.html}
+}
+%%%%% MOONSHOT RELATED %%%%%
+
+%%%%% MOONBOT RELATED %%%%%
+@online{PLA,
+  author = {{FlashForge}},
+  title = {{FlashForge 3D Printer - Adventurer 3}},
+  year = 2023,
+  url = {https://flashforge.shop-pro.jp/?pid=73112321},
+}
+
+@online{flashforge_creator3pro,
+  title = {{FlashForge Creator 3 Pro}},
+  year = 2023,
+  url = {https://flashforge.jp/product/creator3pro/},
+}
+%%%%% MOONBOT RELATED %%%%%
+
+%%%%% LITERATURE REVIEW %%%%%
+@INPROCEEDINGS{omniwheel,
+  author={Daniel, D. and Krogh, B. and Friedman, M.},
+  booktitle={Proceedings. 1985 IEEE International Conference on Robotics and Automation}, 
+  title={Kinematics and open-loop control of an ilonator-based mobile platform}, 
+  year={1985},
+  volume={2},
+  number={},
+  pages={346-351},
+  keywords={Kinematics;Open loop systems;Wheels;Intelligent robots;Motor drives;Control systems;Intelligent systems;Wheelchairs;Mobile robots;Analytical models},
+  doi={10.1109/ROBOT.1985.1087227}}
+
+@online{apollo,
+  title = {{Apollo Lunar Missions}},
+  url = {https://www.nasa.gov/mission_pages/apollo/index.html},
+  organization = {{NASA}},
+}
+
+@online{nasa_construct,
+  title = {{NASA Looks to Advance 3D Printing Construction Systems for the Moon and Mars}},
+  author = {{NASA}},
+  year = {2020},
+  month = {October},
+  day = {1},
+  url = {https://www.nasa.gov/technology/manufacturing-materials-3-d-printing/nasa-looks-to-advance-3d-printing-construction-systems-for-the-moon-and-mars/},
+}
+
+@online{worms,
+  author = {MIT Space Resources},
+  title = {WORMS - Water-Only Resource Mining System},
+  year = {2022},
+  url = {https://spaceresources.mit.edu/projects/worms-2022},
+}
+
+@INPROCEEDINGS{spacebok,
+  author={Arm, Philip and Zenkl, Radek and Barton, Patrick and Beglinger, Lars and Dietsche, Alex and Ferrazzini, Luca and Hampp, Elias and Hinder, Jan and Huber, Camille and Schaufelberger, David and Schmitt, Felix and Sun, Benjamin and Stolz, Boris and Kolvenbach, Hendrik and Hutter, Marco},
+  booktitle={2019 International Conference on Robotics and Automation (ICRA)}, 
+  title={SpaceBok: A Dynamic Legged Robot for Space Exploration}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={6288-6294},
+  keywords={Legged locomotion;Hip;Actuators;Gravity;Torque;Foot},
+  doi={10.1109/ICRA.2019.8794136}}
+
+
+@book{mckerrow,
+  title={Introduction to Robotics},
+  author={Philip, McKerrow},
+  year={1991},
+  editor={Alexander, R. N. and Goldspink, G.},
+  publisher={Addison-Wesley Publishing Co.}
+}
+
+@INPROCEEDINGS{electrovoxel,
+  author={Nisser, Martin and Cheng, Leon and Makaram, Yashaswini and Suzuki, Ryo and Mueller, Stefanie},
+  booktitle={ICRA 2022}, 
+  title={ElectroVoxel: Electromagnetically Actuated Pivoting for Scalable Modular Self-Reconfigurable Robots}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={4254-4260},
+  doi={10.1109/ICRA46639.2022.9811746}}
+
+@inproceedings{bares,
+  title     = {Configuration of an autonomous robot for Mars exploration},
+  author    = {John, Bares and Martial, Hebert and Takeo, Kanade and Eric, Krotkov and Reid, Simmons and William, Whittaker},
+  booktitle = {World Conference on Robotics Research: The Next Five Years and Beyond},
+  volume    = {1},
+  pages     = {37--52},
+  year      = {1989},
+  address   = {Gaithersburg},
+}
+
+@article{syropod,
+  author={Tam, Benjamin and Talbot, Fletcher and Steindl, Ryan and Elfes, Alberto and Kottege, Navinda},
+  journal={IEEE Access}, 
+  title={OpenSHC: A Versatile Multilegged Robot Controller}, 
+  year={2020},
+  volume={8},
+  number={},
+  pages={188908-188926},
+  keywords={},
+  doi={10.1109/ACCESS.2020.3031019},
+  ISSN={2169-3536},
+  month={},}
+
+@INPROCEEDINGS{hyperdog,
+  author={Mudalige, Nipun Dhananjaya Weerakkodi and Zhura, Iana and Babataev, Ildar and Nazarova, Elena and Fedoseev, Aleksey and Tsetserukou, Dzmitry},
+  booktitle={2022 IEEE International Conference on Systems, Man, and Cybernetics (SMC)}, 
+  title={HyperDog: An Open-Source Quadruped Robot Platform Based on ROS2 and micro-ROS}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={436-441},
+  keywords={Legged locomotion;Three-dimensional displays;Operating systems;Software algorithms;Dogs;Software;Quadrupedal robots;Robotic Systems;Mechatronics;System Modeling and Control},
+  doi={10.1109/SMC53654.2022.9945526}}
+
+%%%%% LITERATURE REVIEW %%%%%
+
+%%%%% Modular Robot %%%%%
+@INPROCEEDINGS{snapbot1,
+  author={Kim, Joohyung and Alspach, Alexander and Yamane, Katsu},
+  booktitle={2017 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
+  title={Snapbot: A reconfigurable legged robot}, 
+  year={2017},
+  volume={},
+  number={},
+  pages={5861-5867},
+  keywords={Legged locomotion;Couplings;Pins;Servomotors;Three-dimensional displays},
+  doi={10.1109/IROS.2017.8206477}}
+
+
+
+@INPROCEEDINGS{snapbot2,
+  author={Gim, Kevin G. and Kim, Joohyung},
+  booktitle={2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
+  title={Snapbot V2: a Reconfigurable Legged Robot with a Camera for Self Configuration Recognition}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={4026-4031},
+  keywords={Legged locomotion;Visualization;Robot vision systems;Dynamics;Cameras;Generators;Intelligent robots},
+  doi={10.1109/IROS45743.2020.9341279}}
+
+
+@INPROCEEDINGS{modularrobot,
+  author={Whitman, Julian and Su, Shuang and Coros, Stelian and Ansari, Alex and Choset, Howie},
+  booktitle={2017 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
+  title={Generating gaits for simultaneous locomotion and manipulation}, 
+  year={2017},
+  volume={},
+  number={},
+  pages={2723-2729},
+  keywords={Foot;Legged locomotion;Morphology;Trajectory optimization;Switches},
+  doi={10.1109/IROS.2017.8206099}}
+
+
+@article{MITassembler,
+  author = {Abdel-Rahman, A. and Cameron, C. and Jenett, B. and et al.},
+  title = {Self-replicating hierarchical modular robotic swarms},
+  journal = {Commun Eng},
+  volume = {1},
+  pages = {35},
+  year = {2022},
+  doi = {10.1038/s44172-022-00034-3},
+  url = {https://doi.org/10.1038/s44172-022-00034-3}
+}
+
+
+@inproceedings{Eigenbot,
+  title={Modular Robot Design Synthesis with Deep Reinforcement Learning},
+  author={Julian Whitman and Raunaq M. Bhirangi and Matthew J. Travers and Howie Choset},
+  booktitle={AAAI Conference on Artificial Intelligence},
+  year={2020},
+  url={https://api.semanticscholar.org/CorpusID:208782001}
+}
+
+@INPROCEEDINGS{Superbot,
+  author={Salemi, Behnam and Moll, Mark and Shen, Wei-min},
+  booktitle={2006 IEEE/RSJ International Conference on Intelligent Robots and Systems}, 
+  title={SUPERBOT: A Deployable, Multi-Functional, and Modular Self-Reconfigurable Robotic System}, 
+  year={2006},
+  volume={},
+  number={},
+  pages={3636-3641},
+  doi={10.1109/IROS.2006.281719}}
+
+@article{modularity,
+title = {Modularity for the future in space robotics: A review},
+journal = {Acta Astronautica},
+volume = {189},
+pages = {530-547},
+year = {2021},
+issn = {0094-5765},
+doi = {https://doi.org/10.1016/j.actaastro.2021.09.007},
+url = {https://www.sciencedirect.com/science/article/pii/S0094576521004938},
+author = {Mark A. Post and Xiu-Tian Yan and Pierre Letier},}
+%%%%% Modular Robot %%%%%
+
+%%%%% ROS2 %%%%%
+@inproceedings{ros,
+  author = {Morgan Quigley and Brian Gerkey and Ken Conley and Josh Faust and Tully Foote and Jeremy Leibs and Eric Berger and Rob Wheeler and Andrew Ng},
+  title = {ROS: an open-source Robot Operating System},
+  booktitle = {Proc. of the IEEE Intl. Conf. on Robotics and Automation (ICRA) Workshop on Open Source Robotics},
+  month = may,
+  year = 2009,
+  address = {Kobe, Japan}
+}
+
+@article{ros2,
+    author = {Steven Macenski and Tully Foote and Brian Gerkey and Chris Lalancette and William Woodall},
+    title = {Robot Operating System 2: Design, architecture, and uses in the wild},
+    journal = {Science Robotics},
+    volume = {7},
+    number = {66},
+    pages = {eabm6074},
+    year = {2022},
+    doi = {10.1126/scirobotics.abm6074},
+    URL = {https://www.science.org/doi/abs/10.1126/scirobotics.abm6074}
+}
+
+@online{ros2control,
+  author    = {ROS 2 Control Working Group},
+  title     = {{ROS 2 Control}},
+  year      = {2023},
+  url       = {https://docs.ros.org/en/foxy/Releases/Release-Foxy-Fitzroy.html#ros-2-control},
+  note      = {Online documentation},
+}
+
+@online{ros_control,
+  title = {{ros\_control}},
+  author = {{ROS Controls}},
+  url = {https://github.com/ros-controls/ros_control},
+}
+
+@online{DDS,
+  author    = {William Woodall},
+  title     = {{ROS on DDS}},
+  url       = {https://design.ros2.org/articles/ros_on_dds.html},
+  note      = {Online documentation},
+}
+
+@misc{ros2controlDXL,
+  note={{\tt \url{https://github.com/dynamixel-community/dynamixel_hardware/tree/foxy} (accessed 2024.01.06)}},
+}
+
+@online{ros_combined_robot_hw,
+  title = {combined\_robot\_hw},
+  author = {ROS Wiki Contributors},
+  url = {https://wiki.ros.org/combined_robot_hw?distro=noetic},
+}
+
+@online{ros2lifecycle,
+  author = {ROS 2 Design},
+  title = {ROS 2 Node Lifecycle},
+  year = {2015},
+  url = {https://design.ros2.org/articles/node_lifecycle.html},
+  note = {Date Written: June 2015}
+}
+
+@misc{ros2controllers,
+  title = {{ROS 2 Controllers Documentation}},
+  author = {{ROS 2 Control Authors}},
+  howpublished = {\url{https://control.ros.org/master/doc/ros2_controllers/doc/controllers_index.html}},
+}
+
+@software{gazebo,
+  title = {{Gazebo}: An open-source 3D robotics simulator},
+  year = {2002},
+  howpublished = {Available at \url{http://gazebosim.org}},
+}
+
+%%%%% ROS2 %%%%%
+
+%%%%% DXL %%%%%
+@misc{robotis,
+  author       = "{ROBOTIS}",
+  title        = "{ROBOTIS: Dynamixel Servos}",
+  howpublished = "\url{https://www.robotis.us/}",
+  year         = {2023}
+}
+
+@online{DXL,
+  title = {Robotis},
+  url = {https://emanual.robotis.com/docs/en/dxl/x/xm430-w350/},
+  note = {XM430-W350},
+}
+
+@online{U2D2,
+  title = {Robotis},
+  url = {https://emanual.robotis.com/docs/en/parts/interface/u2d2/},
+  note = {U2D2},
+}
+
+@manual{dynamixel-sdk,
+  author        = "{ROBOTIS}",
+  title         = "{ROBOTIS Dynamixel SDK}",
+  organization  = "ROBOTIS",
+  year          = {2010},
+  url           = {https://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/}
+}
+
+@online{dynamixel_sdk_ping_protocol,
+  title = {Dynamixel SDK - Python Ping Protocol 2.0},
+  author = {{ROBOTIS}},
+  url = {https://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/sample_code/python_ping_protocol_2_0/},
+  note = {2023},
+}
+
+@misc{dynamixel_workbench,
+    title = {{Dynamixel Workbench}},
+    howpublished = {\url{https://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_workbench/}},
+    note = {Accessed: December 2023}
+}
+
+@online{dynamixel_wizard2,
+  title = {Dynamixel Wizard2},
+  author = {{ROBOTIS}},
+  url = {https://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_wizard2/},
+}
+
+%%%%% DXL %%%%%
+
+%%%%% Future work %%%%%
+
+@article{anymalRL,
+author = {Kim, Myeongseop and Kim, Jung-Su and Park, Jae-Han},
+year = {2023},
+month = {12},
+pages = {116},
+title = {Automated Hyperparameter Tuning in Reinforcement Learning for Quadrupedal Robot Locomotion},
+volume = {13},
+journal = {Electronics},
+doi = {10.3390/electronics13010116}
+}
+
+@ARTICLE{anymalDRL,
+  author={Tsounis, Vassilios and Alge, Mitja and Lee, Joonho and Farshidian, Farbod and Hutter, Marco},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={DeepGait: Planning and Control of Quadrupedal Gaits Using Deep Reinforcement Learning}, 
+  year={2020},
+  volume={5},
+  number={2},
+  pages={3699-3706},
+  keywords={Deep learning;Motion planning;Legged locomotion;Optimization;Path planning;Legged robots;deep learning in robotics and automation;motion and path planning},
+  doi={10.1109/LRA.2020.2979660}}
+
+@misc{legged_gym_git,
+  author = {{Legged Robotics Group}},
+  title = {{Legged Gym: OpenAI Gym Environment for Legged Robots}},
+  howpublished = {GitHub repository},
+  url = {https://github.com/leggedrobotics/legged_gym}
+}
+
+@conference{modularDRL,
+author = {Julian Whitman and Raunaq M. Bhirangi and Matthew J. Travers and Howie Choset},
+title = {Modular Robot Design Synthesis with Deep Reinforcement Learning},
+booktitle = {Proceedings of 34th AAAI Conference on Artificial Intelligence (AAAI '20)},
+year = {2020},
+month = {February},
+pages = {10418 - 10425},
+}
+
+@conference{modularlegDRL,
+author = {Julian Whitman and Matthew J. Travers and Howie Choset},
+title = {Modular mobile robot design selection with deep
+reinforcement learning},
+}
+%%%%% Future work %%%%%
+
+
+%%% EOF %%%
